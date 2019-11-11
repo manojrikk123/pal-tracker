@@ -12,7 +12,6 @@ buildscript {
     }
 }
 
-
 plugins {
     id "java"
 }
@@ -25,4 +24,21 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+    testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
 }
+
+bootRun.environment([
+        "WELCOME_MESSAGE": "hello",
+        "port": "8080",
+        "memory_limit": "100MB",
+        "cf.instance.index": "5",
+        "cf.instance.addr": "8081",
+])
+
+test.environment([
+        "WELCOME_MESSAGE": "Hello from test",
+        "port": "8090",
+        "memory_limit": "10MB",
+        "cf.instance.index": "1",
+        "cf.instance.addr": "8091",
+])
