@@ -1,15 +1,20 @@
 package com.example.pal;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.websocket.server.PathParam;
+
 @RestController
-@RequestMapping("/hello")
 public class HelloController {
 
-    @GetMapping
+    @GetMapping("/")
     public String sayHello() {
-        return "Hello";
+        return "hello";
+    }
+
+    @GetMapping("/{name}")
+    public String sayHello(@PathParam("name") String name) {
+        return "hello " + name;
     }
 }
