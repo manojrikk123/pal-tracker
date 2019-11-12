@@ -14,3 +14,4 @@ applications:
       CF_PASSWORD: r6rw79ck
       GITHUB_USERNAME: monojrikk123
       GITHUB_OAUTH_TOKEN: 20936273330c10eb1283ca5f78f93f74a0982d14
+      RELEASE_TAG: 1.0
