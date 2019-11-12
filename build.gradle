@@ -28,7 +28,7 @@ dependencies {
 }
 
 bootRun.environment([
-        "WELCOME_MESSAGE": "hello",
+        "welcome.message": "hello",
         "port": "8080",
         "memory_limit": "100MB",
         "cf.instance.index": "5",
@@ -36,7 +36,7 @@ bootRun.environment([
 ])
 
 test.environment([
-        "WELCOME_MESSAGE": "Hello from test",
+        "welcome.message": "Hello from test",
         "port": "8090",
         "memory_limit": "10MB",
         "cf.instance.index": "1",
