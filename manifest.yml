@@ -7,11 +7,3 @@ applications:
     env:
       WELCOME_MESSAGE: Hello from the review environment
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
-      CF_API_URL: https://pal-tracker-another.apps.evans.pal.pivotal.io
-      CF_ORG: manoj.kumarkoduru.rbs.com
-      CF_SPACE: sandbox
-      CF_USERNAME: manoj.kumarkoduru@rbs.com
-      CF_PASSWORD: r6rw79ck
-      GITHUB_USERNAME: monojrikk123
-      GITHUB_OAUTH_TOKEN: 20936273330c10eb1283ca5f78f93f74a0982d14
-      RELEASE_TAG: 1.0
