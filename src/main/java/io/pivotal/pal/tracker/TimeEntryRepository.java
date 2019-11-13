@@ -14,3 +14,4 @@ public interface TimeEntryRepository {
 
     public void delete(long timeEntryId);
 }
+
