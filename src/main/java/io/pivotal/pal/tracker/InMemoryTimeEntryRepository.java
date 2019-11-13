@@ -1,6 +1,5 @@
 package io.pivotal.pal.tracker;
 
-import java.time.LocalDate;
 import java.util.*;
 
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
@@ -10,18 +9,6 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
 
     public InMemoryTimeEntryRepository() {
         timeEntryMap = new HashMap<>();
-
-        /*TimeEntry timeEntry1 = new TimeEntry(1L, 100L, 1001L, LocalDate.parse("2019-11-12"), 8);
-        TimeEntry timeEntry2 = new TimeEntry(2L, 100L, 1002L, LocalDate.parse("2019-11-13"), 8);
-        TimeEntry timeEntry3 = new TimeEntry(3L, 101L, 1003L, LocalDate.parse("2019-11-14"), 8);
-        TimeEntry timeEntry4 = new TimeEntry(4L, 101L, 1004L, LocalDate.parse("2019-11-15"), 8);
-        TimeEntry timeEntry5 = new TimeEntry(5L, 100L, 1005L, LocalDate.parse("2019-11-16"), 8);
-
-        timeEntryMap.put(timeEntry1.getId(), timeEntry1);
-        timeEntryMap.put(timeEntry2.getId(), timeEntry2);
-        timeEntryMap.put(timeEntry3.getId(), timeEntry3);
-        timeEntryMap.put(timeEntry4.getId(), timeEntry4);
-        timeEntryMap.put(timeEntry5.getId(), timeEntry5);*/
     }
 
     public TimeEntry find(long id) {
